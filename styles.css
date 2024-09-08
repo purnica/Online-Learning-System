@@ -1,1 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family: Arial, sans-serif;
+    background-color: #FFF9F2;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 1100px;; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-container{
+    padding-top: 70px;
+    margin-left: 70px;
+    padding-left: 10px;
+    padding: 20px;
+    flex: 1;
+    text-align: left;
+}
+
+.logo {
+    width: 130px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.lower{
+    margin-bottom: 15px;
+}
+
+.heart {
+    color: #48BAE7;
+}
+
+p {
+    margin: 10px 0;
+    margin-bottom: 15px;
+    font-size: 2cap;
+    font-weight: lighter;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    color: #000000;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+span{
+    color: #48BAE7;
+}
+
+.right-container {
+    padding: 50px;
+    flex: 0.8;
+    border-radius: 20px;
+    background-color: #73c4e443;
+    color: #000000;
+    text-align: center;
+    padding-top: 50px;
+    border-left: 1px solid #ffffff;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-left: 5%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.signup{
+    text-align: right;
+    padding-right: 5%;
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    margin: 10px 5%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.forgetpsd{ 
+    margin-bottom: 5%;
+    padding-left: 5%;
+    text-align: left;
+    border-color: #00000020;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: small;
+}
+
+a{
+    text-decoration: none;
+    color: #468CA8;
+}
+.login-btn {
+    margin: 10px 5%;
+    padding: 10px;
+    background-color: #73c4e4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 693px){
+    /* .container {
+        /* flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .left-section {
+        order: 2;
+    }
+
+    .right-section {
+        order: 1;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    form input {
+        width: 90%;
+    } */
+}
