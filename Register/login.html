@@ -5,41 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function validate(){
-            let email = document.getElementById("e").value;
-            let password = document.getElementById("p").value;
-
-            if (email == "") {
-                alert("please provide your email");
-                document.getElementById("e").focus();
-                return false;
-            }
-
-            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,4}$/;
-            if(!emailPattern.test(email)){
-                alert("Please enter a valid email address!");
-                document.getElementById("e").focus();
-                return false;
-            }
-
-            if (password == "") {
-                alert("please provide your password");
-                document.getElementById("p").focus();
-                return false;
-            }
-
-            var passwordPattern= /^.{6,9}$/;
-            if(!passwordPattern.test(password)){
-                alert("Enter a password with at least 6 character");
-                document.getElementById("p").focus();
-                return false;
-            }
-
-            alert("Login succesfully");
-            return true;
-        }
-     </script>
 </head>
 <body>
     <div class="container">
@@ -59,13 +24,15 @@
 
         <div class="right-container">
             <h2>Log in</h2>
-            <form action="#">
-                <label class="signup">Don't have account? <a href="#">Sign up</a></label>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
+            <form onsubmit="return validate()">
+                <label class="signup">Don't have account? <a href="signup.html">Sign up</a></label>
+                <input type="email" id="e" placeholder="Email" required>
+                <input type="password" id="p" placeholder="Password" required>
                 <label class="forgetpsd"><a href="#">Forget Password?</a></label>
                 <button type="submit" class="login-btn">Login</button>
+                <label><a href=""><u>Admin Login ?</u></a></label>
             </form>
+            <script src="login.js"></script>
         </div>
     </div>
 </body>

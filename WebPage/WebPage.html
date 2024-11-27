@@ -11,21 +11,25 @@
 
     <!-- ................. NavBar ......................... -->
     <nav class="navbar">
+      <!-- logo -->
       <div class="logo">
         <a href="#"><img src="logo1.png" alt="EduGhar Logo" /></a>
       </div>
+      <!-- links -->
       <ul class="nav-links">
-        <li><a href="#" style="color: #65aecb;">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#container" style="color: #65aecb;">Home</a></li>
+        <li><a href="#aboutcontainer">About</a></li>
         <li><a href="#">Courses</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
+      <!-- search bar -->
       <div class="search-container">
         <input type="text" placeholder="Search..." class="search-input" />
         <button class="search-btn">
           <img src="search-icon.png" alt="Search" />
         </button>
       </div>
+      <!-- login / signup button -->
       <div class="nav-icons">
         <a href="#" class="login-button">Login</a>
         <a href="#" class="sign-button">Sign up</a>
@@ -33,8 +37,9 @@
     </nav>
 
     
-    <!--...................... Main-Body ....................... -->
-    <div class="container">
+    <!--...................... HeroPage ....................... -->
+    <div id="container">
+      <!-- left side -->
       <div class="left-container">
         <h1><span class="highlight">Learn</span> on your</h1>
         <h1 class="lower">
@@ -51,15 +56,29 @@
 
         <a href="#" class="get-started">Get Started</a>
       </div>
-
+      
+      <!-- right side -->
       <div class="right-container">
         <img src="Creatives1.png" alt="picture" class="hero-image" width="700px" height="700px">
       </div>
 
     </div>
+    <!--...................... HeroPage Close....................... -->
 
 
+  <!-- ..................... About Us................................. -->
+  <div id="aboutcontainer">
+    <!-- left side -->
+    <div class="bodyleft">
+      <img src="about.jpg" alt="pic" class="about-image" width="600px" height="500px">
+    </div>
 
+    <!-- right side -->
+     <div class="bodyright">
+      <img src="ABOUT PAGE.jpg" alt="pic" class="about-text" width="500px" height="450px">
+     </div> 
+  </div>
+  <!-- ........................AboutUs Close............................ -->
 
   </body>
 </html>
