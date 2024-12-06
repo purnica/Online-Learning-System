@@ -1,3 +1,3 @@
 # Online Learning System
-EduLe
+EduGhar
 
