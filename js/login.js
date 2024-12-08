@@ -28,6 +28,6 @@ function validate(){
         return false;
     }
 
-    alert("Login succesfully");
+    // alert("Login succesfully");
     return true;
 }

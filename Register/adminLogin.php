@@ -23,16 +23,16 @@
         </div>
 
         <div class="right-container">
-            <h2>Log in</h2>
-            <form onsubmit="return validate()">
-                <label class="signup">Don't have account? <a href="signup.html">Sign up</a></label>
-                <input type="email" id="e" placeholder="Email" required>
-                <input type="password" id="p" placeholder="Password" required>
+            <h2>Admin Login</h2>
+            <form action="admindb.php" method="post">
+                <!-- <label class="signup">Don't have account? <a href="signup.html">Sign up</a></label> -->
+                <input type="email" id="e" name="e" placeholder="Email" required>
+                <input type="password" id="p" name="pass" placeholder="Password" required>
                 <!-- <label class="forgetpsd"><a href="#">Forget Password?</a></label> -->
-                <button type="submit" class="login-btn">Login</button>
-                <label><a href="adminLogin.html"><u>Admin Login ?</u></a></label>
+                <button type="submit" value="submit" class="login-btn">Login</button>
+                <label><a href="login.php"><u>User Login ?</u></a></label>
             </form>
-            <script src="login.js"></script>
+            <!-- <script src="login.js"></script> -->
         </div>
     </div>
 </body>

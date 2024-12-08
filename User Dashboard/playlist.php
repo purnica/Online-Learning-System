@@ -1,3 +1,17 @@
+<?php
+
+session_start();
+
+// Check if user is logged in
+if (!isset($_SESSION['firstname'])) {
+   header("Location: login.php");
+   exit;
+}
+
+$name = $_SESSION['firstname'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,9 +33,9 @@
 
       <section class="flex">
 
-         <a href="home.html"><img src="images/logo1.png" class="logo"></img></a>
+         <a href="home.php"><img src="images/logo1.png" class="logo"></img></a>
    
-         <form action="search.html" method="post" class="search-form">
+         <form action="search.php" method="post" class="search-form">
             <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
             <button type="submit" class="fas fa-search"></button>
          </form>
@@ -35,12 +49,12 @@
    
          <div class="profile">
             <img src="images/pic-1.jpg" class="image" alt="">
-            <h3 class="name">My Name</h3>
+            <h3 class="name"><?php echo htmlspecialchars($name); ?></h3>
             <p class="role">Student</p>
-            <a href="profile.html" class="btn">view profile</a>
+            <a href="profile.php" class="btn">view profile</a>
             <div class="flex-btn">
-               <a href="login.html" class="option-btn">logout</a>
-               <!-- <a href="register.html" class="option-btn">register</a> -->
+               <a href="login.php" class="option-btn">logout</a>
+               <!-- <a href="register.php" class="option-btn">register</a> -->
             </div>
          </div>
    
@@ -56,16 +70,16 @@
    
       <div class="profile">
          <img src="images/pic-1.jpg" class="image" alt="">
-         <h3 class="name">My Name</h3>
+         <h3 class="name"><?php echo htmlspecialchars($name); ?></h3>
          <p class="role">student</p>
-         <a href="profile.html" class="btn">view profile</a>
+         <a href="profile.php" class="btn">view profile</a>
       </div>
    
       <nav class="navbar">
-         <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
-         <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
-         <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
-         <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+         <a href="home.php"><i class="fas fa-home"></i><span>home</span></a>
+         <a href="about.php"><i class="fas fa-question"></i><span>about</span></a>
+         <a href="courses.php"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+         <a href="contact.php"><i class="fas fa-headset"></i><span>contact us</span></a>
       </nav>
    
    </div>
@@ -98,7 +112,7 @@
          <div class="details">
             <h3>complete HTML Course</h3>
             <p>The language for building web pages.</p>
-            <!-- <a href="teacher_profile.html" class="inline-btn">view profile</a> -->
+            <!-- <a href="teacher_profile.php" class="inline-btn">view profile</a> -->
          </div>
       </div>
    </div>
@@ -111,37 +125,37 @@
 
    <div class="box-container">
 
-      <a class="box" href="watch-video.html">
+      <a class="box" href="watch-video.php">
          <i class="fas fa-play"></i>
          <img src="images/post-1-1.png" alt="">
          <h3>complete HTML tutorial (part 01)</h3>
       </a>
 
-      <a class="box" href="watch-video.html">
+      <a class="box" href="watch-video.php">
          <i class="fas fa-play"></i>
          <img src="images/post-1-2.png" alt="">
          <h3>complete HTML tutorial (part 02)</h3>
       </a>
 
-      <a class="box" href="watch-video.html">
+      <a class="box" href="watch-video.php">
          <i class="fas fa-play"></i>
          <img src="images/post-1-3.png" alt="">
          <h3>complete HTML tutorial (part 03)</h3>
       </a>
 
-      <a class="box" href="watch-video.html">
+      <a class="box" href="watch-video.php">
          <i class="fas fa-play"></i>
          <img src="images/post-1-4.png" alt="">
          <h3>complete HTML tutorial (part 04)</h3>
       </a>
 
-      <a class="box" href="watch-video.html">
+      <a class="box" href="watch-video.php">
          <i class="fas fa-play"></i>
          <img src="images/post-1-5.png" alt="">
          <h3>complete HTML tutorial (part 05)</h3>
       </a>
 
-      <a class="box" href="watch-video.html">
+      <a class="box" href="watch-video.php">
          <i class="fas fa-play"></i>
          <img src="images/post-1-6.png" alt="">
          <h3>complete HTML tutorial (part 06)</h3>
