@@ -26,12 +26,23 @@ $result= mysqli_query($conn,$sql);
 $num=mysqli_num_rows($result);
 if($num>0)
 {
-header("Location:webPage.php");
-exit;
-}
+    $user = mysqli_fetch_assoc($result);
+
+    if($user['password'] === $pass){
+    $_SESSION['firstname'] = $user['firstname'];
+    header("Location:home.php");
+    exit;
+    }
+
 else{
-echo "invalid username and password";
+echo "invalid password";
 }
+
+}
+else {
+    echo "No user found with this username!";
+}
+
 }
 
 mysqli_close($conn);
