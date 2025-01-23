@@ -23,3 +23,19 @@ insert into admin (email, password) values("purnika@gmail.com","purnika"),("upas
 insert into admin (email, password) values("admin@gmail.com","admin123");
 
 select * from admin;
+
+alter table admin
+add name varchar(10);
+
+update admin set name= 'Purnika' where id=1;
+update admin set name= 'Upasana' where id=2;
+update admin set name= 'AdminJi' where id=3;
+
+create table courses(
+CourseID int primary key auto_increment,
+CourseTitle varchar(30),
+description varchar(1000),
+CreditHour int 
+);
+
+select * from courses;

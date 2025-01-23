@@ -32,7 +32,7 @@
                 <button type="submit" value="submit" class="login-btn">Login</button>
                 <label><a href=""><u>Admin Login ?</u></a></label>
             </form>
-            <script src="login.js"></>
+            <script src="login.js"></script>
         </div>
     </div>
 </body>

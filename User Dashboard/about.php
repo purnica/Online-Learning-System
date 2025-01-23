@@ -24,7 +24,7 @@ $name = $_SESSION['firstname'];
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css\style.css">
 
 </head>
 <body>
@@ -51,7 +51,7 @@ $name = $_SESSION['firstname'];
          <img src="images/pic-1.jpg" class="image" alt="">
          <h3 class="name"><?php echo htmlspecialchars($name); ?></h3>
          <p class="role">Student</p>
-         <a href="profile.php" class="btn">view profile</a>
+         <!-- <a href="profile.php" class="btn">view profile</a> -->
          <div class="flex-btn">
             <a href="login.php" class="option-btn">logout</a>
             <!-- <a href="register.php" class="option-btn">register</a> -->
@@ -72,7 +72,7 @@ $name = $_SESSION['firstname'];
       <img src="images/pic-1.jpg" class="image" alt="">
       <h3 class="name"><?php echo htmlspecialchars($name); ?></h3>
       <p class="role">student</p>
-      <a href="profile.php" class="btn">view profile</a>
+      <!-- <a href="profile.php" class="btn">view profile</a> -->
    </div>
 
    <nav class="navbar">
@@ -89,7 +89,7 @@ $name = $_SESSION['firstname'];
    <div class="row">
 
       <div class="image">
-         <img src="images/about-img.svg" alt="">
+         <img src="images/about-us.svg" alt="">
       </div>
 
       <div class="content">

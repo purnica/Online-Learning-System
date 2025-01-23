@@ -24,7 +24,7 @@ $name = $_SESSION['firstname'];
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css\style.css">
 
 </head>
 <body>
@@ -51,7 +51,7 @@ $name = $_SESSION['firstname'];
          <img src="images/pic-1.jpg" class="image" alt="">
          <h3 class="name"><?php echo htmlspecialchars($name); ?></h3>
          <p class="role">Student</p>
-         <a href="profile.php" class="btn">view profile</a>
+         <!-- <a href="profile.php" class="btn">view profile</a> -->
          <div class="flex-btn">
             <a href="login.php" class="option-btn">logout</a>
             <!-- <a href="register.html" class="option-btn">register</a> -->
@@ -72,7 +72,7 @@ $name = $_SESSION['firstname'];
       <img src="images/pic-1.jpg" class="image" alt="">
       <h3 class="name"><?php echo htmlspecialchars($name); ?></h3>
       <p class="role">student</p>
-      <a href="profile.php" class="btn">view profile</a>
+      <!-- <a href="profile.php" class="btn">view profile</a> -->
    </div>
 
    <nav class="navbar">
@@ -89,17 +89,17 @@ $name = $_SESSION['firstname'];
    <div class="row">
 
       <div class="image">
-         <img src="images/contact-img.svg" alt="">
+         <img src="images\contactus-hero.svg" alt="">
       </div>
 
-      <form action="" method="post">
+      <!-- <form action="" method="post">
          <h3>get in touch</h3>
          <input type="text" placeholder="enter your name" name="name" required maxlength="50" class="box">
          <input type="email" placeholder="enter your email" name="email" required maxlength="50" class="box">
          <input type="number" placeholder="enter your number" name="number" required maxlength="50" class="box">
          <textarea name="msg" class="box" placeholder="enter your message" required maxlength="1000" cols="30" rows="10"></textarea>
          <input type="submit" value="send message" class="inline-btn" name="submit">
-      </form>
+      </form> -->
 
    </div>
 
